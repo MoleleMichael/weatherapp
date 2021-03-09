@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Weather Update</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- <form class="form" >
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">City Name</ion-label>
+            <ion-input type="text" formControlName="city"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="loadWeather(city)" shape="round" color="success">Search</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form> -->
+
+  <ion-card>
+    <ion-card-header>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZlwBVMPeTdeEIN186JQTY_cZf-zVJU6Oz7w&usqp=CAU">
+      <!-- <ion-card-subtitle>{{forecast.visibility}}</ion-card-subtitle> -->
+      <ion-card-title color="warning">{{forecast.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content color="warning">
+      <!-- Min Temp: {{forecast.main.temp_min}} <br/>
+      Max Temp: {{forecast.main.temp_max}} <br/>
+      Humudity: {{forecast.main.Humidity}} <br/>
+      Description: {{forecast.weather[0].description}} <br/>
+    Icon: {{forecast.icon}} -->
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
